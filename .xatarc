@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Matteo-Sala-s-workspace-bhls8a.eu-west-1.xata.sh/db/zenon-app",
+  "codegen": {
+    "output": "app/lib/xata.ts"
+  }
+}

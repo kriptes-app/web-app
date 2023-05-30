@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+}
+
+.row {
+  @apply flex flex-col justify-center items-center;
+}
+
+.ft-rw-wrp {
+  @apply items-start gap-2;
+}
+
+.knowledge {
+  @apply bg-no-repeat bg-cover bg-origin-content;
+}
+
+.card:hover {
+  @apply cursor-pointer;
+}
+
+.custom-icon {
+  @apply text-[3.5rem] mt-5;
+}
