@@ -1,8 +1,7 @@
 'use client';
 
-import Link from 'next/link';
 import { Navbar, Footer } from '@/app/components/components';
-import { useSession } from 'next-auth/react';
+import { signIn, useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 
 export default function Login() {
@@ -12,12 +11,20 @@ export default function Login() {
   if (session.status === 'authenticated') router.push('/dashboard');
 
   return (
-    <section className="login">
-      <Navbar />
+    <div className="login min-h-screen">
+      {/* <Navbar /> */}
       <div className="login-header">
-        <h1></h1>
+        <h1>Login to Kriptes</h1>
+        <button
+          className="btn"
+          onClick={() => {
+            signIn('discord');
+          }}
+        >
+          Aiuto
+        </button>
       </div>
       <Footer />
-    </section>
+    </div>
   );
 }
